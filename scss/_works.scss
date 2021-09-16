@@ -1,0 +1,67 @@
+@import "var";
+
+.works {
+  background-color: $bg-color;
+
+  &__title {
+    padding-top: 50px;
+    padding-bottom: 22px;
+    font-family: "roboto condensed";
+    font-weight: bold;
+    font-size: 18px;
+    color: $accent-color;
+    text-transform: uppercase;
+  }
+
+  &__list {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  &__list-item {
+    margin: 0;
+    padding: 0;
+    width: 350px;
+
+    margin-bottom: 63px;
+  }
+
+  &__category {
+    font-family: "Roboto Slab";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 20px;
+    text-transform: capitalize;
+    color: #adadad;
+  }
+
+  &__list-title {
+    padding-top: 50px;
+    padding-bottom: 5px;
+    font-family: Roboto Slab;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 24px;
+    text-transform: capitalize;
+    color: $accent-color;
+  }
+
+  &__list-txt {
+    margin-top: 13px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 28px;
+    color: #5c5c5c;
+  }
+
+  &__list-img {
+    object-fit: cover;
+  }
+}

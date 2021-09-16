@@ -1,0 +1,275 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  font-family: roboto, serif;
+  font-size: 14px;
+  line-height: 24px;
+  background-color: #f7f7f7;
+}
+
+.header {
+  background-color: #e6e6e6;
+}
+
+.header-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 36px 0;
+}
+
+body .logo {
+  width: 139px;
+}
+
+.nav-bar {
+  font-family: "roboto condensed";
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 16px;
+  text-decoration: none;
+  text-align: right;
+}
+
+.navigation {
+  display: flex;
+}
+.nav-link {
+  text-decoration: none;
+  color: #4e4e4e;
+  margin-left: 30px;
+  text-align: right;
+}
+
+#active {
+  color: #1abb9c;
+}
+.nav-link a:hover {
+  color: #1abb9c;
+}
+
+.banner {
+  padding: 1px;
+  background-image: url("./img/hero-bg1.jpg");
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+}
+.banner-tittle {
+  font-family: "roboto slab";
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 40px;
+  color: #ffffff;
+  margin: 180px 0px 0px 0px;
+}
+.banner-txt {
+  font-family: "roboto slab";
+  font-weight: bold;
+  font-size: 35px;
+  line-height: 35px;
+  color: #a8a8a8;
+  margin: 40px auto 0;
+}
+
+.banner-button {
+  display: inline-block;
+  /* text-align: center; */
+  margin: 50px auto 205px auto;
+  background-color: #3f8dbf;
+  border-radius: 4px;
+  padding: 11px 20px;
+}
+
+.button-txt {
+  margin: 20px auto 10px auto;
+}
+
+.banner-button a {
+  color: #ffffff;
+  text-decoration: none;
+  font-family: "roboto condensed";
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.services {
+  background-color: #f7f7f7;
+}
+
+.services-list {
+  display: flex;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  align-items: center;
+  border-bottom: 1px solid #dcdcdc;
+}
+
+.servises-title {
+  font-family: "roboto slab";
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 24px;
+  color: #4e4e4e;
+}
+
+.services-item {
+  width: 257px;
+  margin-right: 17px;
+  margin-block-end: 0;
+  margin: 50px 0;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.container {
+  align-items: center;
+  justify-content: center;
+  max-width: 1110px;
+  margin: 0 auto;
+}
+
+.works {
+  background-color: #f7f7f7;
+}
+
+.works-title {
+  padding-top: 50px;
+  padding-bottom: 22px;
+  font-family: "roboto condensed";
+  font-weight: bold;
+  font-size: 18px;
+  color: #4e4e4e;
+  text-transform: uppercase;
+}
+
+.works-item {
+  width: 353.4px;
+  margin-right: 14px;
+  margin-bottom: 63px;
+}
+
+.works-list {
+  display: flex;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.works-category {
+  font-family: "roboto slab";
+  font-size: 13px;
+  line-height: 20px;
+  font-weight: bold;
+  color: #adadad;
+}
+
+.works-txt {
+  font-family: roboto;
+  font-size: 14px;
+  line-height: 28px;
+  color: #5c5c5c;
+}
+
+.testimonials {
+  padding-top: 67px;
+  margin: 0;
+  height: 284px;
+  background-color: #efefef;
+}
+
+.testimonials-img {
+  display: block;
+  margin: 0 auto 36px auto;
+}
+.blockquote {
+  text-align: center;
+  font-family: "roboto slab";
+  font-size: 20px;
+  line-height: 30px;
+  color: #a1a1a1;
+}
+.footer {
+  background-color: #1f1f1f;
+  margin: 0;
+}
+.footer-inner {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 30px;
+  border-bottom: 1px solid #353535;
+}
+.footer-title {
+  font-family: "roboto condensed";
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  color: #6c6c6c;
+  text-transform: uppercase;
+}
+
+.footer-list {
+  color: #cacaca;
+  width: 240px;
+  vertical-align: top;
+  margin-right: 30px;
+}
+
+.footer-txt {
+  color: #cacaca;
+}
+address a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.address {
+  color: #fff;
+  text-decoration: none;
+  font-style: unset;
+}
+
+.navigation a {
+  text-decoration: none;
+  color: #4e4e4e;
+  font-size: 16px;
+  font-family: "roboto condensed";
+}
+
+ul {
+  list-style: none;
+}
+.footer-list ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.email:before {
+  content: url(./img/envelope.svg);
+  margin-right: 5px;
+}
+
+.phone:before {
+  content: url(./img/phone.svg);
+  margin-right: 5px;
+}
+
+address::before {
+  content: url(./img/location.svg);
+  margin-right: 7px;
+}
+
+.twitter p::before {
+  content: url(./img/twitter.svg);
+  margin-right: 5px;
+}

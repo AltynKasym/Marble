@@ -1,0 +1,417 @@
+@charset "UTF-8";
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+/* Убираем внутренние отступы */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Убираем внешние отступы */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Выставляем основные настройки по-умолчанию для body */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
+a:not([class]) {
+  -webkit-text-decoration-skip: ink;
+          text-decoration-skip-ink: auto;
+}
+
+/* Упрощаем работу с изображениями */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Указываем понятную периодичность в потоке данных у article*/
+article > * + * {
+  margin-top: 1em;
+}
+
+/* Наследуем шрифты для инпутов и кнопок */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Удаляем все анимации и переходы для людей, которые предпочитай их не использовать */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    -webkit-animation-duration: 0.01ms !important;
+            animation-duration: 0.01ms !important;
+    -webkit-animation-iteration-count: 1 !important;
+            animation-iteration-count: 1 !important;
+    -webkit-transition-duration: 0.01ms !important;
+         -o-transition-duration: 0.01ms !important;
+            transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+body {
+  margin: 0;
+  font-family: roboto, serif;
+  font-size: 14px;
+  line-height: 24px;
+  background-color: #f7f7f7;
+}
+
+.container {
+  padding: 0 10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  max-width: 1110px;
+  margin: 0 auto;
+}
+
+ul {
+  list-style: none;
+}
+
+.header__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 35px 0 36px;
+}
+.header__nav-bar {
+  font-family: "roboto condensed";
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 16px;
+  text-decoration: none;
+  text-align: right;
+}
+.header__navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.header__navigation a {
+  text-decoration: none;
+  color: #4e4e4e;
+  font-size: 16px;
+  font-family: "roboto condensed";
+}
+.header__nav-link {
+  text-decoration: none;
+  color: #4e4e4e;
+  margin-left: 30px;
+  text-align: right;
+}
+.header #active {
+  color: #1abb9c;
+}
+.header__nav-link a:hover {
+  color: #1abb9c;
+}
+
+.banner {
+  padding: 1px;
+  background-image: url("../img/hero-bg1.jpg");
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+}
+.banner__tittle {
+  font-family: "roboto slab";
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1.4;
+  color: #ffffff;
+  margin: 180px 0px 0px 0px;
+}
+.banner__txt {
+  padding: 0;
+  font-family: "roboto slab";
+  font-weight: bold;
+  font-size: 35px;
+  line-height: 1.4;
+  color: #a8a8a8;
+  margin: 40px auto 0;
+}
+.banner__button {
+  display: inline-block;
+  margin: 50px auto 205px auto;
+  background-color: #3f8dbf;
+  border-radius: 4px;
+  padding: 11px 20px;
+  -webkit-box-shadow: 0px 14px 22px -3px rgba(0, 0, 0, 0.42);
+          box-shadow: 0px 14px 22px -3px rgba(0, 0, 0, 0.42);
+}
+.banner__button__txt {
+  margin: 20px auto 10px auto;
+}
+.banner__button a {
+  color: #ffffff;
+  text-decoration: none;
+  font-family: "roboto condensed";
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.services {
+  background-color: #f7f7f7;
+}
+.services__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+  padding: 0 0 48px;
+  margin: 0;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-bottom: 1px solid #dcdcdc;
+}
+.services__title {
+  padding: 100px 0 22px;
+  font-family: "Roboto Slab";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+  color: #4e4e4e;
+}
+.services__item {
+  position: relative;
+  width: 257px;
+  margin: 71px 0 48px;
+  text-align: center;
+}
+.services__item--first::before {
+  position: absolute;
+  top: 0px;
+  left: 88px;
+  content: url("/img/pell.svg");
+}
+.services__item--second::before {
+  position: absolute;
+  top: 0px;
+  left: 88px;
+  content: url("../img/cons.svg");
+}
+.services__item--third::before {
+  position: absolute;
+  top: 0px;
+  left: 88px;
+  content: url("../img/trist.svg");
+}
+.services__item--fourth::before {
+  position: absolute;
+  top: 0px;
+  left: 88px;
+  content: url("../img/ferm.svg");
+}
+
+.works {
+  background-color: #f7f7f7;
+}
+.works__title {
+  padding-top: 50px;
+  padding-bottom: 22px;
+  font-family: "roboto condensed";
+  font-weight: bold;
+  font-size: 18px;
+  color: #4e4e4e;
+  text-transform: uppercase;
+}
+.works__list {
+  padding: 0;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.works__list-item {
+  margin: 0;
+  padding: 0;
+  width: 350px;
+  margin-bottom: 63px;
+}
+.works__category {
+  font-family: "Roboto Slab";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 13px;
+  line-height: 20px;
+  text-transform: capitalize;
+  color: #adadad;
+}
+.works__list-title {
+  padding-top: 50px;
+  padding-bottom: 5px;
+  font-family: Roboto Slab;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 24px;
+  text-transform: capitalize;
+  color: #4e4e4e;
+}
+.works__list-txt {
+  margin-top: 13px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 28px;
+  color: #5c5c5c;
+}
+.works__list-img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.testimonials {
+  padding: 67px 0 0;
+  margin: 0;
+  background-color: #efefef;
+  background-image: url(../img/quote.svg);
+  background-repeat: no-repeat;
+  background-position: center 70px;
+}
+.testimonials__blockquote {
+  padding: 70px 0 90px;
+  text-align: center;
+  font-family: "roboto slab";
+  font-size: 20px;
+  line-height: 30px;
+  color: #4e4e4e;
+}
+
+.footer {
+  background-color: #1f1f1f;
+  margin: 0;
+}
+.footer__inner {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 30px;
+  border-bottom: 1px solid #353535;
+}
+.footer__title {
+  font-family: "roboto condensed";
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  color: #6c6c6c;
+  text-transform: uppercase;
+  padding: 40px 0;
+}
+.footer__list {
+  color: #cacaca;
+  width: 240px;
+  vertical-align: top;
+  margin-right: 30px;
+}
+.footer__list ul {
+  list-style: none;
+  padding-left: 0;
+  padding-top: 0;
+  margin: 0;
+}
+.footer__txt {
+  color: #cacaca;
+  padding-bottom: 15px;
+}
+
+address a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.address {
+  color: #fff;
+  text-decoration: none;
+  font-style: unset;
+}
+
+.navigation a {
+  text-decoration: none;
+  color: #4e4e4e;
+  font-size: 16px;
+  font-family: "roboto condensed";
+}
+
+.email:before {
+  content: url(../img/envelope.svg);
+  margin-right: 5px;
+}
+
+.phone:before {
+  content: url(../img/phone.svg);
+  margin-right: 5px;
+}
+
+address::before {
+  content: url(../img/location.svg);
+  margin-right: 7px;
+}
+
+.twitter p::before {
+  content: url(../img/twitter.svg);
+  margin-right: 5px;
+}
+
+.second-footer {
+  padding: 40px 0;
+}
