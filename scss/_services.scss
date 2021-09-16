@@ -33,28 +33,28 @@
       position: absolute;
       top: 0px;
       left: 88px;
-      content: url("../img/pell.svg");
+      content: url("img/pell.svg");
     }
 
     &--second::before {
       position: absolute;
       top: 0px;
       left: 88px;
-      content: url("../img/cons.svg");
+      content: url("img/cons.svg");
     }
 
     &--third::before {
       position: absolute;
       top: 0px;
       left: 88px;
-      content: url("../img/trist.svg");
+      content: url("img/trist.svg");
     }
 
     &--fourth::before {
       position: absolute;
       top: 0px;
       left: 88px;
-      content: url("../img/ferm.svg");
+      content: url("img/ferm.svg");
     }
   }
 }
