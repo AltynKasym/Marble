@@ -236,7 +236,7 @@ ul {
   position: absolute;
   top: 0px;
   left: 88px;
-  content: url("/img/pell.svg");
+  content: url("../img/pell.svg");
 }
 .services__item--second::before {
   position: absolute;
