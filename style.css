@@ -59,7 +59,7 @@ body .logo {
 
 .banner {
   padding: 1px;
-  background-image: url("./img/hero-bg1.jpg");
+  background-image: url("img/hero-bg1.jpg");
   background-position: center;
   background-size: cover;
   text-align: center;
@@ -255,21 +255,21 @@ ul {
 }
 
 .email:before {
-  content: url(./img/envelope.svg);
+  content: url(img/envelope.svg);
   margin-right: 5px;
 }
 
 .phone:before {
-  content: url(./img/phone.svg);
+  content: url(img/phone.svg);
   margin-right: 5px;
 }
 
 address::before {
-  content: url(./img/location.svg);
+  content: url(img/location.svg);
   margin-right: 7px;
 }
 
 .twitter p::before {
-  content: url(./img/twitter.svg);
+  content: url(img/twitter.svg);
   margin-right: 5px;
 }
