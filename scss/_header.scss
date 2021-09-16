@@ -1,0 +1,44 @@
+@import "var";
+
+.header {
+  &__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 35px 0 36px;
+  }
+
+  &__nav-bar {
+    font-family: "roboto condensed";
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 16px;
+    text-decoration: none;
+    text-align: right;
+  }
+
+  &__navigation {
+    display: flex;
+    a {
+      text-decoration: none;
+      color: $accent-color;
+      font-size: 16px;
+      font-family: "roboto condensed";
+    }
+  }
+
+  &__nav-link {
+    text-decoration: none;
+    color: $accent-color;
+    margin-left: 30px;
+    text-align: right;
+  }
+  #active {
+    color: $hover-color;
+  }
+  &__nav-link {
+    a:hover {
+      color: $hover-color;
+    }
+  }
+}

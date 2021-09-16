@@ -1,0 +1,82 @@
+@import "var";
+
+.footer {
+  background-color: #1f1f1f;
+  margin: 0;
+
+  &__inner {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 30px;
+    border-bottom: 1px solid #353535;
+  }
+  &__title {
+    font-family: "roboto condensed";
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    color: #6c6c6c;
+    text-transform: uppercase;
+    padding: 40px 0;
+  }
+
+  &__list {
+    color: #cacaca;
+    width: 240px;
+    vertical-align: top;
+    margin-right: 30px;
+    ul {
+      list-style: none;
+      padding-left: 0;
+      padding-top: 0;
+      margin: 0;
+    }
+  }
+
+  &__txt {
+    color: #cacaca;
+    padding-bottom: 15px;
+  }
+}
+
+address a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.address {
+  color: #fff;
+  text-decoration: none;
+  font-style: unset;
+}
+
+.navigation a {
+  text-decoration: none;
+  color: #4e4e4e;
+  font-size: 16px;
+  font-family: "roboto condensed";
+}
+
+.email:before {
+  content: url(../img/envelope.svg);
+  margin-right: 5px;
+}
+
+.phone:before {
+  content: url(../img/phone.svg);
+  margin-right: 5px;
+}
+
+address::before {
+  content: url(../img/location.svg);
+  margin-right: 7px;
+}
+
+.twitter p::before {
+  content: url(../img/twitter.svg);
+  margin-right: 5px;
+}
+
+.second-footer {
+  padding: 40px 0;
+}

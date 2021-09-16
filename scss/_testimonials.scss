@@ -1,0 +1,19 @@
+@import "var";
+
+.testimonials {
+  padding: 67px 0 0;
+  margin: 0;
+  background-color: #efefef;
+  background-image: url(../img/quote.svg);
+  background-repeat: no-repeat;
+  background-position: center 70px;
+
+  &__blockquote {
+    padding: 70px 0 90px;
+    text-align: center;
+    font-family: "roboto slab";
+    font-size: 20px;
+    line-height: 30px;
+    color: $accent-color;
+  }
+}

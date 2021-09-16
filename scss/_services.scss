@@ -1,0 +1,60 @@
+@import "var";
+
+.services {
+  background-color: $bg-color;
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 0 0 48px;
+    margin: 0;
+    justify-content: space-between;
+    border-bottom: 1px solid #dcdcdc;
+  }
+  &__title {
+    padding: 100px 0 22px;
+    font-family: "Roboto Slab";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+    color: $accent-color;
+  }
+
+  &__item {
+    position: relative;
+    width: 257px;
+    margin: 71px 0 48px;
+    text-align: center;
+
+    &--first::before {
+      position: absolute;
+      top: 0px;
+      left: 88px;
+      content: url("/img/pell.svg");
+    }
+
+    &--second::before {
+      position: absolute;
+      top: 0px;
+      left: 88px;
+      content: url("../img/cons.svg");
+    }
+
+    &--third::before {
+      position: absolute;
+      top: 0px;
+      left: 88px;
+      content: url("../img/trist.svg");
+    }
+
+    &--fourth::before {
+      position: absolute;
+      top: 0px;
+      left: 88px;
+      content: url("../img/ferm.svg");
+    }
+  }
+}
