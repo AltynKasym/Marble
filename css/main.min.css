@@ -236,25 +236,25 @@ ul {
   position: absolute;
   top: 0px;
   left: 88px;
-  content: url("img/pell.svg");
+  content: url("../img/pell.svg");
 }
 .services__item--second::before {
   position: absolute;
   top: 0px;
   left: 88px;
-  content: url("img/cons.svg");
+  content: url("../img/cons.svg");
 }
 .services__item--third::before {
   position: absolute;
   top: 0px;
   left: 88px;
-  content: url("img/trist.svg");
+  content: url("../img/trist.svg");
 }
 .services__item--fourth::before {
   position: absolute;
   top: 0px;
   left: 88px;
-  content: url("img/ferm.svg");
+  content: url("../img/ferm.svg");
 }
 
 .works {
