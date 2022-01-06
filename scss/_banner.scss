@@ -16,7 +16,7 @@
     margin: 180px 0px 0px 0px;
   }
   &__txt {
-    padding: 0;
+    padding: 0 20px;
     font-family: "roboto slab";
     font-weight: bold;
     font-size: 35px;
@@ -43,5 +43,27 @@
     font-family: "roboto condensed";
     font-weight: 400;
     font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .banner {
+    &__tittle {
+      font-size: 30px;
+    }
+    &__txt {
+      font-size: 25px;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .banner {
+    &__tittle {
+      font-size: 25px;
+    }
+    &__txt {
+      font-size: 20px;
+    }
   }
 }

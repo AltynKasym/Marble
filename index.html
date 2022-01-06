@@ -11,29 +11,30 @@
     <link rel="stylesheet" href="css/main.min.css">
   </head>
   <body>
-      <header class="header commit-add">
+      <header class="header">
         <div class="container">
           <div class="header__nav">
             <div class="header__logo">
-            <a href="#">
+            <a href="/">
             <img class="header__logo-img" src="img/Logo.svg" alt="">
             </a>
            </div>
           <nav class="header__nav-bar">
             <ul class="header__navigation">
               <li class="header__nav-link"><a id="active" href="#">Home</a></li>
-              <li class="header__nav-link"><a href="#">About</a></li>
-              <li class="header__nav-link"><a href="#">Journal</a></li>
-              <li class="header__nav-link"><a href="#">Service</a></li>
-              <li class="header__nav-link"><a href="#">Futures</a></li>
-              <li class="header__nav-link"><a href="#">Contacts</a></li>
+              <li class="header__nav-link"><a href="#about">About</a></li>
+              <li class="header__nav-link"><a href="#journal">Journal</a></li>
+              <li class="header__nav-link"><a href="#service">Service</a></li>
+              <li class="header__nav-link"><a href="#futures">Futures</a></li>
+              <li class="header__nav-link"><a href="#contacts">Contacts</a></li>
             </ul>
           </nav>
+          <div class="burger-menu">.</div>
         </div>
         </div>
       </header>
 
-      <section class="banner">
+      <section class="banner" id='about'>
         <div class="container">
           <h2 class="banner__tittle">
             We are a digital & branding agency baced in London
@@ -48,28 +49,28 @@
       </section>
    
 
-    <section class="services">
+    <section class="services" id='service'>
       <div class="container">
       <ul class="services__list">
-        <li class="services__item services__item--first">
+        <li class="services__item ">
           <h4 class="services__title">Pellentesque</h4>
           <p>
             Nulla vitae libero, a pharetra augue. Integer posuere erat a ante venenatis condimentum velit dapibus.
           </p>
         </li>
-        <li class="services__item services__item--second">
+        <li class="services__item ">
           <h4 class="services__title">Consectetur</h4>
           <p>
             Vestibulum id ligula porta euismod semper. Aenean lacinia bibendum nulla sed consectetur dui.
           </p>
         </li>
-        <li class="services__item services__item--third">
+        <li class="services__item ">
           <h4 class="services__title">Tristiquet</h4>
           <p>
             Fusce dapibus, cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo risus.
           </p>
         </li>
-        <li class="services__item services__item--fourth">
+        <li class="services__item ">
           <h4 class="services__title">Fermentum</h4>
           <p>
             Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum sagittis lacus mollis.
@@ -79,14 +80,14 @@
     </div>
     </section>
 
-    <section class="works">
+    <section class="works" id='journal'>
       <div class="container">
       <h2 class="works__title">Latest work</h2>
       <ul class="works__list">
         <li class="works__list-item">
           <img class="works__list-img" src="img/Rectangle1.jpg" alt="Img" />
           <h4 class="works__list-title">Nobis Business Card</h4>
-          <span class="works__category">Business Card, Graphic</span>
+          <a href=""><span class="works__category">Business Card, Graphic</span></a>
           <p class="works__list-txt">
             Sed posuere consectetur est at lobortis. Porta sagittis lacus vel augue laoreet rutrum.
           </p>
@@ -95,7 +96,7 @@
         <li class="works__list-item">
           <img class="works__list-img" src="img/Rectangle2.jpg" alt="Img" />
           <h4 class="works__list-title">New Fun Project</h4>
-          <span class="works__category">Web Design, Application</span>
+          <a href=""><span class="works__category">Web Design, Application</span></a>
           <p class="works__list-txt">
             Nulla vitae elit libero, a pharetra augue. Donec sed odio dui. Vestibulum id ligula porta felis.
           </p>
@@ -104,7 +105,7 @@
         <li class="works__list-item">
           <img class="works__list-img" src="img/Rectangle3.jpg" alt="Img" />
           <h4 class="works__list-title">Passionaries Branding Cover</h4>
-          <span class="works__category">Branding, Graphic Design</span>
+          <a href=""><span class="works__category">Branding, Graphic Design</span></a>
           <p class="works__list-txt">
             Curabitur blandit tempus porttitor. Donec id elit non mi porta gravida at eget metus.
           </p>
@@ -113,13 +114,13 @@
     </div>
     </section>
 
-    <section class="testimonials">
+    <section class="testimonials" id='futures'>
       <div class="container">
       <blockquote class="testimonials__blockquote">Cras mattis consectetur purus sit amet fermentum. Donec id elit non mi porta gravida at eget metus. Duis mollis, est non commodo luctus erat porttitor.</blockquote>
     </div>
     </section>
   </main>
-  <footer class="footer">
+  <footer class="footer" id='contacts'>
     <div class="container">
       <div class="footer__inner">
         <div class="footer__list">
@@ -132,17 +133,17 @@
         </div>
         <div class="footer__list twitter">
           <h3 class="footer__title">Twitter</h3>
-          <p class="footer__txt">Aenean lacinia bibendum nulla sed leo posuere erat a ante venenatis dapibus posuere velit aliquet.</p>
-          <p class="footer__txt">Donec ullamcorper metus auctor fringilla. Nullam quis risus eget.</p>
-          <p class="footer__txt">Vestibulum id ligula porta  euismod semper. Maecenas faucibus mollis.</p>
+          <p class="footer__txt"><a href=""> Aenean lacinia bibendum nulla sed leo posuere erat a ante venenatis dapibus posuere velit aliquet.</p></a>
+          <p class="footer__txt"><a href="">Donec ullamcorper metus auctor fringilla. Nullam quis risus eget.</p></a>
+          <p class="footer__txt"><a href="">Vestibulum id ligula porta  euismod semper. Maecenas faucibus mollis.</p></a>
         </div>
         <div class="footer__list">
           <h3 class="footer__title">Popular Posts</h3>
-          <ul><li class="footer__txt">Vivamus sagittis lacus vel augue laoreet rutrum dolor auctor.
+          <ul><li class="footer__txt"><a href=""> Vivamus sagittis lacus vel augue laoreet rutrum dolor auctor.</a>
             <time class="footer__txt">2012-11-14</time></li>
-            <li class="footer__txt">Scelerisque nisl consectetur et.
+            <li class="footer__txt"><a href="">Scelerisque nisl consectetur et.</a>
               <time class="footer__txt">2012-05-22</time></li>
-              <li class="footer__txt">Pellentesque ornare sem lacinia quam venenatis vestibulum.
+              <li class="footer__txt"><a href="">Pellentesque ornare sem lacinia quam venenatis vestibulum.</a>
                 <time class="footer__txt">2012-07-15</time></li>
           </ul>
         </div>
@@ -156,6 +157,10 @@
     <div class="container">
     <p class="footer__txt second-footer">&copy;2013 Marble. All rights reserved. Theme by elemis.</p>
   </div>
+
+
   </footer>
+
+  <script src="./js/app.js"></script>
   </body>
 </html>

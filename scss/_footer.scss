@@ -5,10 +5,12 @@
   margin: 0;
 
   &__inner {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-gap: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
     border-bottom: 1px solid #353535;
+    margin: 0 auto;
   }
   &__title {
     font-family: "roboto condensed";
@@ -37,11 +39,6 @@
     color: #cacaca;
     padding-bottom: 15px;
   }
-}
-
-address a {
-  color: #fff;
-  text-decoration: none;
 }
 
 .address {
@@ -79,4 +76,15 @@ address::before {
 
 .second-footer {
   padding: 40px 0;
+}
+
+a {
+  color: #cacaca;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 1099px) {
+  .second-footer {
+    padding: 40px 1.3%;
+  }
 }

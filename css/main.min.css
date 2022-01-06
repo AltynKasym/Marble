@@ -15,6 +15,7 @@ html {
 ul[class],
 ol[class] {
   padding: 0;
+  margin: 0;
 }
 
 /* Убираем внешние отступы */
@@ -33,6 +34,7 @@ blockquote,
 dl,
 dd {
   margin: 0;
+  padding: 0;
 }
 
 /* Выставляем основные настройки по-умолчанию для body */
@@ -111,6 +113,14 @@ ul {
   list-style: none;
 }
 
+.header {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  left: 0;
+  background-color: #f7f7f7;
+  z-index: 99;
+}
 .header__nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -121,7 +131,10 @@ ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 35px 0 36px;
+  padding: 30px 0;
+}
+.header__logo-img {
+  width: 100px;
 }
 .header__nav-bar {
   font-family: "roboto condensed";
@@ -155,6 +168,74 @@ ul {
   color: #1abb9c;
 }
 
+.burger-menu {
+  display: none;
+}
+
+@media screen and (max-width: 1100px) {
+  .header__logo {
+    padding-left: 5%;
+  }
+
+  .header__nav {
+    padding-right: 30px;
+  }
+}
+@media screen and (max-width: 750px) {
+  .header li.header__nav-link {
+    padding: 5px;
+    margin: 0;
+  }
+  .header__navigation {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: absolute;
+    top: -200;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-color: #f7f7f7;
+    width: 100%;
+    display: none;
+    opacity: 0;
+    -webkit-transition: 0.6s;
+    -o-transition: 0.6s;
+    transition: 0.6s;
+  }
+  .header__navigation-vision {
+    left: 0;
+    top: 70px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    opacity: 1;
+  }
+
+  .burger-menu {
+    display: block;
+    width: 30px;
+    color: #f7f7f7;
+    background: url("../img/menu.svg") no-repeat center;
+    -webkit-transition: 0.2s;
+    -o-transition: 0.2s;
+    transition: 0.2s;
+  }
+
+  .burger-menu-open {
+    background: url("../img/menu-close.svg") no-repeat center;
+    -webkit-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+            transform: rotate(90deg);
+  }
+}
 .banner {
   padding: 1px;
   background-image: url("../img/hero-bg1.jpg");
@@ -171,7 +252,7 @@ ul {
   margin: 180px 0px 0px 0px;
 }
 .banner__txt {
-  padding: 0;
+  padding: 0 20px;
   font-family: "roboto slab";
   font-weight: bold;
   font-size: 35px;
@@ -199,8 +280,26 @@ ul {
   font-size: 14px;
 }
 
+@media screen and (max-width: 1000px) {
+  .banner__tittle {
+    font-size: 30px;
+  }
+  .banner__txt {
+    font-size: 25px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .banner__tittle {
+    font-size: 25px;
+  }
+  .banner__txt {
+    font-size: 20px;
+  }
+}
 .services {
   background-color: #f7f7f7;
+  padding: 50px 0 48px;
+  border-bottom: 1px solid #dcdcdc;
 }
 .services__list {
   display: -webkit-box;
@@ -208,13 +307,12 @@ ul {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  justify-items: center;
+  justify-self: center;
   width: 100%;
-  padding: 0 0 48px;
-  margin: 0;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  border-bottom: 1px solid #dcdcdc;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .services__title {
   padding: 100px 0 22px;
@@ -228,32 +326,37 @@ ul {
 }
 .services__item {
   position: relative;
-  width: 257px;
-  margin: 71px 0 48px;
+  width: 270px;
+  padding: 0 20px;
+  margin: 20px 0;
   text-align: center;
 }
-.services__item--first::before {
+.services__item:nth-child(1)::before {
   position: absolute;
   top: 0px;
-  left: 88px;
+  left: 95px;
+  text-align: center;
   content: url("../img/pell.svg");
 }
-.services__item--second::before {
+.services__item:nth-child(2)::before {
   position: absolute;
   top: 0px;
-  left: 88px;
+  text-align: center;
+  left: 95px;
   content: url("../img/cons.svg");
 }
-.services__item--third::before {
+.services__item:nth-child(3)::before {
   position: absolute;
   top: 0px;
-  left: 88px;
+  text-align: center;
+  left: 95px;
   content: url("../img/trist.svg");
 }
-.services__item--fourth::before {
+.services__item:nth-child(4)::before {
   position: absolute;
   top: 0px;
-  left: 88px;
+  text-align: center;
+  left: 95px;
   content: url("../img/ferm.svg");
 }
 
@@ -261,8 +364,7 @@ ul {
   background-color: #f7f7f7;
 }
 .works__title {
-  padding-top: 50px;
-  padding-bottom: 22px;
+  padding: 50px 20px 22px;
   font-family: "roboto condensed";
   font-weight: bold;
   font-size: 18px;
@@ -277,9 +379,8 @@ ul {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 .works__list-item {
   margin: 0;
@@ -330,7 +431,7 @@ ul {
   background-position: center 70px;
 }
 .testimonials__blockquote {
-  padding: 70px 0 90px;
+  padding: 70px 20px 90px;
   text-align: center;
   font-family: "roboto slab";
   font-size: 20px;
@@ -343,10 +444,19 @@ ul {
   margin: 0;
 }
 .footer__inner {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-gap: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   border-bottom: 1px solid #353535;
+  margin: 0 auto;
 }
 .footer__title {
   font-family: "roboto condensed";
@@ -372,11 +482,6 @@ ul {
 .footer__txt {
   color: #cacaca;
   padding-bottom: 15px;
-}
-
-address a {
-  color: #fff;
-  text-decoration: none;
 }
 
 .address {
@@ -414,4 +519,15 @@ address::before {
 
 .second-footer {
   padding: 40px 0;
+}
+
+a {
+  color: #cacaca;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 1099px) {
+  .second-footer {
+    padding: 40px 1.3%;
+  }
 }

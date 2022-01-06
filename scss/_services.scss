@@ -2,15 +2,18 @@
 
 .services {
   background-color: $bg-color;
+  padding: 50px 0 48px;
+
+  border-bottom: 1px solid #dcdcdc;
 
   &__list {
     display: flex;
     flex-wrap: wrap;
+    justify-items: center;
+    justify-self: center;
     width: 100%;
-    padding: 0 0 48px;
-    margin: 0;
-    justify-content: space-between;
-    border-bottom: 1px solid #dcdcdc;
+    // margin: 71px 0 48px;
+    justify-content: center;
   }
   &__title {
     padding: 100px 0 22px;
@@ -25,36 +28,50 @@
 
   &__item {
     position: relative;
-    width: 257px;
-    margin: 71px 0 48px;
+    width: 270px;
+    padding: 0 20px;
+    margin: 20px 0;
     text-align: center;
 
-    &--first::before {
+    &:nth-child(1)::before {
       position: absolute;
       top: 0px;
-      left: 88px;
+      left: 95px;
+      text-align: center;
       content: url("../img/pell.svg");
     }
 
-    &--second::before {
+    &:nth-child(2)::before {
       position: absolute;
       top: 0px;
-      left: 88px;
+      text-align: center;
+      left: 95px;
       content: url("../img/cons.svg");
     }
 
-    &--third::before {
+    &:nth-child(3)::before {
       position: absolute;
       top: 0px;
-      left: 88px;
+      text-align: center;
+      left: 95px;
       content: url("../img/trist.svg");
     }
-
-    &--fourth::before {
+    &:nth-child(4)::before {
       position: absolute;
       top: 0px;
-      left: 88px;
+      text-align: center;
+      left: 95px;
       content: url("../img/ferm.svg");
     }
   }
 }
+
+// @media screen and (max-width: 1100px) {
+//   .services__item {
+//     // position: relative;
+//     max-width: 320px;
+//     // padding: 0 20px;
+//     // margin: 20px 0;
+//     // text-align: center;
+//   }
+// }

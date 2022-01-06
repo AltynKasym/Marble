@@ -4,8 +4,7 @@
   background-color: $bg-color;
 
   &__title {
-    padding-top: 50px;
-    padding-bottom: 22px;
+    padding: 50px 20px 22px;
     font-family: "roboto condensed";
     font-weight: bold;
     font-size: 18px;
@@ -18,7 +17,7 @@
     margin: 0;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
   }
 
   &__list-item {
