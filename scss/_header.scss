@@ -107,8 +107,9 @@
   }
 
   .burger-menu-open {
+    width: 30px;
     background: url("../img/menu-close.svg") no-repeat center;
-    // transform: rotate(90deg);
+    transform: rotate(90deg);
     // filter: blur(2px);
     transition: 0.2s;
   }
