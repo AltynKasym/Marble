@@ -10,11 +10,13 @@ function toggleMenu() {
     if (menuVis.classList.contains("header__navigation-vision")) {
       menuVis.classList.remove("header__navigation-vision");
       burgerMenu.classList.remove("burger-menu-open");
+      burgerMenu.classList.add("burger-menu");
       footer.style.filter = "none";
       section.forEach((item) => (item.style.filter = "none"));
     } else {
       menuVis.classList.add("header__navigation-vision");
       burgerMenu.classList.add("burger-menu-open");
+      burgerMenu.classList.remove("burger-menu");
       footer.style.filter = "blur(2px)";
       section.forEach((item) => (item.style.filter = "blur(2px)"));
     }
