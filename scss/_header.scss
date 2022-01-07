@@ -91,7 +91,6 @@
         left: 0;
         top: 53px;
         display: flex;
-        // transition: 1s;
         opacity: 1;
       }
     }
@@ -102,15 +101,14 @@
     width: 30px;
     color: #f7f7f7;
     background: url("../img/menu.svg") no-repeat center;
-    // padding-right: 12%;
-    transition: 0.2s;
+    // transition: 0.2s;
   }
 
   .burger-menu-open {
+    display: block;
     width: 30px;
-    background: url("../img/menu-close.svg") no-repeat center;
+    background: url("../img/close.svg") no-repeat center;
     transform: rotate(90deg);
-    // filter: blur(2px);
-    transition: 0.2s;
+    // transition: 0.2s;
   }
 }
