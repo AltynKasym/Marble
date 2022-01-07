@@ -102,7 +102,7 @@
     width: 30px;
     color: #f7f7f7;
     background: url("../img/menu.svg") no-repeat center;
-    transition: 0.2s;
+    // transition: 0.2s;
   }
 
   .burger-menu-open {
@@ -110,6 +110,6 @@
     width: 30px;
     background: url("../img/close.svg") no-repeat center;
     transform: rotate(90deg);
-    // transition: 0.2s;
+    transition: 0.2s;
   }
 }

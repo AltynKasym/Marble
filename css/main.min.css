@@ -227,9 +227,6 @@ ul {
     width: 30px;
     color: #f7f7f7;
     background: url("../img/menu.svg") no-repeat center;
-    -webkit-transition: 0.2s;
-    -o-transition: 0.2s;
-    transition: 0.2s;
   }
 
   .burger-menu-open {
@@ -239,6 +236,9 @@ ul {
     -webkit-transform: rotate(90deg);
         -ms-transform: rotate(90deg);
             transform: rotate(90deg);
+    -webkit-transition: 0.2s;
+    -o-transition: 0.2s;
+    transition: 0.2s;
   }
 }
 .banner {
